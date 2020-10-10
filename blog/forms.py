@@ -15,3 +15,6 @@ class CommentForm(forms.ModelForm):
         model = Comment
         # explicitly tell the framework which fields to include in form
         fields = ('name', 'email', 'body')
+
+class SearchForm(forms.Form):
+    query = forms.CharField()
